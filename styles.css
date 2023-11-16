@@ -1,0 +1,80 @@
+* {
+    margin: 5px;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Mulish', sans-serif;
+    text-decoration: none;
+}
+
+.titulo {
+    margin-top: 30px;
+}
+
+.contenedor-texto-carta {
+    width: 350px;
+}
+
+.text-carta {
+    margin-top: 50px;
+    line-height: 1.6;
+}
+
+.background-color-body {
+    background-color: #FECDA6;
+    display: flex;
+    justify-content: center;        
+}
+
+.contenedor-carta {
+    background-image: url('./multimedia/v689batch2-nunny-02-collgecopyspace.jpg'); /* Cambia 'fondo_carta.jpg' por la ruta de tu imagen */
+    background-size: cover;
+    height: 100vh;
+    width: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*** ESTILOS BOTÓN SLIDE RIGHT ***/
+.ov-btn-slide-right {
+    background: #fff; /* color de fondo */
+    color: black; /* color de fuente */
+    border: 2px solid #FECDA6; /* tamaño y color de borde */
+    padding: 16px 20px;
+    border-radius: 3px; /* redondear bordes */
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    display: inline-block;
+  }
+  .ov-btn-slide-right:hover {
+    color: #fff; /* color de fuente hover */
+  }
+  .ov-btn-slide-right::after {
+    content: "";
+    background: #FECDA6; /* color de fondo hover */
+    position: absolute;
+    z-index: -1;
+    padding: 16px 20px;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 100%;
+    right: -100%;
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s;
+  }
+  .ov-btn-slide-right:hover::after {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s;
+  }
+
+  .contenedor-para-ti {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
